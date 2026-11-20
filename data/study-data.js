@@ -2,7 +2,45 @@
 window.STUDY_DATA = {
   "version": 1,
   "examDate": "2027-03-20",
-  "entries": [],
+  "entries": [
+    {
+      "date": "2026-11-19",
+      "subjects": {
+        "english": {
+          "minutes": 0,
+          "items": []
+        },
+        "theory": {
+          "minutes": null,
+          "items": [
+            {
+              "text": "移动互联网的关键技术：配套视频 + 纸质习题完成和错题整理 + 课后习题完成和错题整理",
+              "done": null
+            },
+            {
+              "text": "移动互联网的应用领域：配套视频 + 纸质习题完成和错题整理 + 课后习题完成和错题整理",
+              "done": null
+            }
+          ]
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": null,
+          "items": [
+            {
+              "text": "6.3 二阶常系数线性齐次微分方程：课后习题完成+错题整理",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习高数6.3二阶常系数线性齐次微分方程的课后习题与错题整理，以及计算机移动互联网的关键技术和应用领域，包括配套视频、纸质习题和课后习题及错题整理；均未提及具体时长。"
+    }
+  ],
   "weeklyReview": null,
   "weeklyReviews": []
 };
