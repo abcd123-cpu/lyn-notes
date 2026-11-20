@@ -117,7 +117,7 @@
   $("#more-reports").addEventListener("click", () => { limit += 8; render(); });
   window.addEventListener("hashchange", () => { if (!location.hash.startsWith("#report=")) return; limit = Math.max(8, reports.findIndex(report => report.id === requestedId()) + 1); render(requestedId()); });
 
-  function theme(value) { document.documentElement.dataset.theme = value; $("#theme-toggle").textContent = value === "dark" ? "☼" : "☾"; $("#theme-toggle").setAttribute("aria-label", value === "dark" ? "切换到浅色主题" : "切换到深色主题"); document.querySelector('meta[name="theme-color"]').content = value === "dark" ? "#17221e" : "#f5f7f8"; }
+  function theme(value) { document.documentElement.dataset.theme = value; $("#theme-toggle").textContent = value === "dark" ? "☼" : "☾"; $("#theme-toggle").setAttribute("aria-label", value === "dark" ? "切换到浅色主题" : "切换到深色主题"); document.querySelector('meta[name="theme-color"]').content = value === "dark" ? "#131e2c" : "#f3f7fc"; }
   try { theme(localStorage.getItem("study-theme") === "dark" ? "dark" : "light"); } catch { theme("light"); }
   $("#theme-toggle").addEventListener("click", () => { const value = document.documentElement.dataset.theme === "dark" ? "light" : "dark"; theme(value); try { localStorage.setItem("study-theme", value); } catch { /* Theme is usable without storage. */ } });
   function showDate() { const date = new Date(); $("#today-label").dateTime = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).format(date); $("#today-label").textContent = new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit", weekday: "long" }).format(date); }

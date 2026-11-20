@@ -221,7 +221,7 @@
   $("#calendar-today").addEventListener("click", () => { month = today.slice(0, 7); renderCalendar(); });
   ["#history-search", "#subject-filter"].forEach(selector => $(selector).addEventListener(selector === "#history-search" ? "input" : "change", () => { limit = 6; renderHistory(); }));
   $("#load-more").addEventListener("click", () => { limit += 6; renderHistory(); });
-  function theme(value) { document.documentElement.dataset.theme = value; $("#theme-toggle").textContent = value === "dark" ? "☼" : "☾"; $("#theme-toggle").setAttribute("aria-label", value === "dark" ? "切换到浅色主题" : "切换到深色主题"); document.querySelector('meta[name="theme-color"]').content = value === "dark" ? "#17221e" : "#f5f7f8"; }
+  function theme(value) { document.documentElement.dataset.theme = value; $("#theme-toggle").textContent = value === "dark" ? "☼" : "☾"; $("#theme-toggle").setAttribute("aria-label", value === "dark" ? "切换到浅色主题" : "切换到深色主题"); document.querySelector('meta[name="theme-color"]').content = value === "dark" ? "#131e2c" : "#f3f7fc"; }
   try { theme(localStorage.getItem("study-theme") === "dark" ? "dark" : "light"); } catch { theme("light"); }
   $("#theme-toggle").addEventListener("click", () => { const value = document.documentElement.dataset.theme === "dark" ? "light" : "dark"; theme(value); try { localStorage.setItem("study-theme", value); } catch { /* Theme remains usable when browser storage is unavailable. */ } });
   function checkDay() { const current = shanghaiToday(); if (current !== today) { const wasToday = selected === today; today = current; $("#day-picker").max = today; if (wasToday) { selected = today; month = today.slice(0, 7); } renderAll(); } }

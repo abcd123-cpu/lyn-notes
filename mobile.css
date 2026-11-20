@@ -1,7 +1,7 @@
 /* Phones show one dashboard view at a time; desktop retains its full layout. */
 @media (max-width: 760px) {
   html { scroll-padding-top: 16px; scroll-padding-bottom: 100px; -webkit-text-size-adjust: 100%; }
-  html:not([data-theme="dark"]) { --muted: #66756c; }
+  html:not([data-theme="dark"]) { --muted: #586e88; }
   body { padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
   .sidebar { position: static; width: auto; height: 72px; padding: 16px max(16px, env(safe-area-inset-left)); border: 0; background: var(--bg); display: flex; flex-direction: row; align-items: center; }
   .brand { justify-content: flex-start; gap: 9px; font-size: 21px; }
@@ -9,7 +9,7 @@
   .brand>span:last-child { display: block; font-size: 21px; }
   .brand small { font-size: 8px; margin-top: 5px; }
   .nav-label,.sidebar-note,.sidebar-bottom { display: none; }
-  .sidebar nav { position: fixed; z-index: 30; inset: auto 0 0; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; padding: 8px max(16px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left)); border-top: 1px solid var(--line); background: var(--surface); box-shadow: 0 -4px 20px #182f2310; }
+  .sidebar nav { position: fixed; z-index: 30; inset: auto 0 0; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; padding: 8px max(16px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left)); border-top: 1px solid var(--line); background: var(--surface); box-shadow: 0 -4px 20px #16385810; }
   .sidebar .nav-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 54px; padding: 7px 6px; border-radius: 12px; line-height: 1.3; }
   .sidebar .nav-copy { display: none; }
   .sidebar .nav-short { display: block; width: auto; font-size: 14px; line-height: 1.3; color: inherit; }
@@ -51,7 +51,7 @@
   .mobile-week-summary .eyebrow { display: none; }
   .mobile-week-summary>p:last-of-type { color: var(--muted); font-size: 14px; line-height: 1.7; margin-top: 8px; }
   .mobile-week-summary>div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; margin-top: 18px; }
-  .mobile-week-summary strong { font-size: 30px; font-weight: 500; color: var(--green); }
+  .mobile-week-summary strong { font-size: 30px; font-weight: 500; color: var(--accent); }
   .mobile-week-summary>div>span { font-size: 14px; color: var(--muted); }
   .mobile-week-link { display: grid; justify-items: start; gap: 12px; border-top: 1px solid var(--line); margin-top: 24px; padding-top: 18px; }
   .mobile-week-link p { color: var(--muted); font-size: 14px; line-height: 1.8; }
@@ -129,8 +129,8 @@
   .reviews-toolbar .text-button { font-size: 13px; }
   .mobile-week-picker { display: flex; gap: 12px; align-items: flex-end; margin-bottom: 18px; }
   .mobile-week-picker label { flex: 1; min-width: 0; display: grid; gap: 7px; font-size: 14px; color: var(--muted); }
-  .mobile-week-picker select { width: 100%; height: 48px; font-size: 16px; border-radius: 10px; padding: 10px 32px 10px 13px; color: var(--ink); background-color: var(--surface); border: 1px solid var(--line); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23829286' stroke-width='1.5'/%3E%3C/svg%3E"); background-size: 12px; background-position: right 13px center; background-repeat: no-repeat; }
-  #toggle-review-search { min-width: 72px; min-height: 48px; padding: 10px 14px; font-size: 15px; color: var(--green); background: var(--soft); border: 1px solid var(--line); border-radius: 10px; }
+  .mobile-week-picker select { width: 100%; height: 48px; font-size: 16px; border-radius: 10px; padding: 10px 32px 10px 13px; color: var(--ink); background-color: var(--surface); border: 1px solid var(--line); appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%237488a1' stroke-width='1.5'/%3E%3C/svg%3E"); background-size: 12px; background-position: right 13px center; background-repeat: no-repeat; }
+  #toggle-review-search { min-width: 72px; min-height: 48px; padding: 10px 14px; font-size: 15px; color: var(--accent); background: var(--soft); border: 1px solid var(--line); border-radius: 10px; }
   .reviews-layout { grid-template-columns: minmax(0,1fr); gap: 18px; }
   .archive-panel { display: none; padding: 18px 14px; }
   .reviews-layout.search-open .archive-panel { display: block; }
