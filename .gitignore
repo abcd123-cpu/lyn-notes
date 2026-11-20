@@ -1,0 +1,27 @@
+# This repository contains only deployable static files.
+# Everything else is ignored unless explicitly allowed below.
+*
+!.gitignore
+!.gitattributes
+!.nojekyll
+!index.html
+!styles.css
+!mobile.css
+!app.js
+!reviews.html
+!reviews.js
+!favicon.svg
+!data/
+!data/study-data.js
+!assets/
+!assets/**
+
+# Defense in depth if local configuration is accidentally copied into assets.
+.env
+.env.*
+**/.env
+**/.env.*
+*.local.json
+*.pem
+*.key
+__pycache__/

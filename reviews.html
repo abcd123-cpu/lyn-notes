@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f5f7f8">
+  <meta name="description" content="收藏每周的学习回顾与下周建议，回看每一个阶段的积累。"><title>本周回顾和下周建议 · 向前一点</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261119-tabs"><link rel="stylesheet" href="./mobile.css?v=20261119-tabs">
+  <script src="./data/study-data.js" defer></script><script src="./reviews.js?v=20261119-live" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">✳</span><span>向前一点<small>A LITTLE EVERY DAY</small></span></a>
+    <p class="nav-label">我的学习空间</p>
+    <nav aria-label="主导航">
+<a class="nav-item" href="./index.html#overview" data-nav-view="overview" aria-label="学习概览"><span aria-hidden="true">◫</span><span class="nav-copy">学习概览</span><span class="nav-short" aria-hidden="true">总览</span></a>
+<a class="nav-item mobile-only-nav" href="./index.html#daily" data-nav-view="daily" aria-label="今天"><span aria-hidden="true">◷</span><span class="nav-copy">今天</span><span class="nav-short" aria-hidden="true">今天</span></a>
+<a class="nav-item mobile-only-nav" href="./index.html#week" data-nav-view="week" aria-label="本周"><span aria-hidden="true">▥</span><span class="nav-copy">本周</span><span class="nav-short" aria-hidden="true">本周</span></a>
+<a class="nav-item mobile-only-nav" href="./index.html#history" data-nav-view="history" aria-label="记录"><span aria-hidden="true">▦</span><span class="nav-copy">记录</span><span class="nav-short" aria-hidden="true">记录</span></a>
+<a class="nav-item active" href="./reviews.html" data-nav-view="reviews" aria-label="本周回顾和下周建议" aria-current="page"><span aria-hidden="true">▤</span><span class="nav-copy">本周回顾<br>和下周建议</span><span class="nav-short" aria-hidden="true">周报</span></a></nav>
+    <div class="sidebar-note"><span class="sprout" aria-hidden="true">✳</span><p>回头看看来时路，<br>再慢慢走向下一周。</p><span>ONE WEEK AT A TIME</span></div>
+    <div class="sidebar-bottom"><span class="small-spark" aria-hidden="true">✧</span><span>一段只属于你的旅程<small id="sidebar-exam">目标日 · 2027.03.20</small></span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">我的空间 <span>/</span> 每周回顾</div><div class="topbar-actions"><time id="today-label"></time><button id="theme-toggle" class="icon-button" type="button" aria-label="切换到深色主题">☾</button><span class="avatar" aria-label="个人学习空间">L</span></div></header>
+    <main id="main" class="reviews-main">
+      <div id="review-data-error" class="data-error" role="alert" hidden>周报暂时无法加载，请稍后刷新页面重试。</div>
+      <section class="reviews-hero" aria-labelledby="reviews-title">
+        <div><p class="eyebrow">A WEEK AT A TIME</p><h1 id="reviews-title"><span class="desktop-title">一周回望，<span>下一步慢慢来。</span></span><span class="mobile-title">每周回顾</span></h1><p>本周回顾和下周建议，收藏每一段积累。<br>回看走过的路，也给下一周留一点期待。</p></div>
+        <div class="archive-tally"><span aria-hidden="true">✳</span><div><strong id="report-total">0</strong> <span>份回顾</span><small id="week-total">每一周，都有新的故事</small></div></div>
+      </section>
+      <div class="reviews-toolbar"><p>AI 整理 · 按周收藏，随时回看</p></div>
+      <div id="mobile-week-picker" class="mobile-week-picker"><label for="mobile-report-select">选择周报<select id="mobile-report-select" aria-label="选择周报"></select></label><button id="toggle-review-search" type="button" aria-expanded="false" aria-controls="archive-panel">检索</button></div>
+      <div class="reviews-layout" id="reviews-layout">
+        <section class="panel archive-panel" id="archive-panel" aria-labelledby="archive-title">
+          <div class="compact-heading"><h2 id="archive-title">周报档案</h2><span class="archive-count" id="archive-count" role="status" aria-live="polite"></span></div>
+          <div class="archive-tools">
+            <label class="search"><span aria-hidden="true">⌕</span><input id="review-search" type="search" placeholder="关键词、科目或日期" aria-label="检索周报"></label>
+            <label class="month-filter">周报月份<select id="review-month" aria-label="筛选周报月份"><option value="all">全部月份</option></select></label>
+          </div>
+          <div id="archive-list" class="archive-list"></div>
+          <button id="more-reports" class="button subtle load-more" type="button" hidden>查看更多回顾</button>
+          <p class="archive-hint">选择一周，回看那时的积累。</p>
+        </section>
+        <article id="review-detail" class="panel review-detail" aria-labelledby="detail-title" hidden>
+          <div class="report-heading"><div><p class="eyebrow">WEEKLY REFLECTION</p><h2 id="detail-title" tabindex="-1"></h2><p id="detail-period"></p></div><span class="report-badge" id="detail-badge">AI 生成</span></div>
+          <div class="report-stats"><div><span>已记录</span><strong id="detail-days"></strong></div><div><span>已填学习时长</span><strong id="detail-duration"></strong></div><div><span>内容截至</span><strong id="detail-through"></strong></div></div>
+          <div class="report-subjects" id="detail-subjects"></div>
+          <section class="report-summary" aria-labelledby="summary-title"><div class="report-section-heading"><span aria-hidden="true">◫</span><h3 id="summary-title">本周回顾</h3></div><p id="detail-summary"></p></section>
+          <section class="report-next" aria-labelledby="suggestions-title"><div class="report-section-heading"><span aria-hidden="true">✧</span><h3 id="suggestions-title">下周建议</h3></div><p class="suggestion-period" id="suggestion-period"></p><ul id="detail-suggestions" class="suggestion-cards"></ul></section>
+          <div class="report-foot"><p id="detail-generated"></p><p>建议仅供参考，按照实际安排取舍，休息也是计划的一部分。</p></div>
+        </article>
+        <section class="panel report-empty" id="report-empty" hidden><span aria-hidden="true">✧</span><h2 id="empty-title">每一周，都值得回望</h2><p id="empty-description">暂时还没有周报。</p><button id="clear-review-filters" class="button subtle" type="button" hidden>清除筛选</button></section>
+      </div>
+      <footer class="footer"><span>向前一点 <span aria-hidden="true">✳</span> 把每一天，写成答案。</span><span>给努力留一页，也给休息留一点空间。</span></footer>
+      <noscript><p class="data-error">请开启 JavaScript 以查阅每周回顾。</p></noscript>
+    </main>
+  </div>
+</body>
+</html>
