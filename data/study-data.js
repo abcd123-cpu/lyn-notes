@@ -4,6 +4,52 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-20",
+      "subjects": {
+        "english": {
+          "minutes": 80,
+          "items": [
+            {
+              "text": "仔细阅读技巧学习：20分钟",
+              "done": null
+            },
+            {
+              "text": "仔细阅读真题练习及纠错：60分钟",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 230,
+          "items": [
+            {
+              "text": "云计算概述：视频40分钟 + 纸质习题及错题整理32分钟 + 课后习题及错题整理8分钟",
+              "done": null
+            },
+            {
+              "text": "云计算的关键技术：视频90分钟 + 纸质习题完成20分钟 + 课后习题及错题整理40分钟",
+              "done": null
+            }
+          ]
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 25,
+          "items": [
+            {
+              "text": "二阶、三阶行列式、克拉默法则",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习高数25分钟、计算机理论230分钟、英语80分钟，专业课实操未提及。"
+    },
+    {
       "date": "2026-11-19",
       "subjects": {
         "english": {
