@@ -4,6 +4,48 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-21",
+      "subjects": {
+        "english": {
+          "minutes": 45,
+          "items": [
+            {
+              "text": "仔细阅读真题练习及纠错",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 97,
+          "items": [
+            {
+              "text": "云计算的技术应用：视频30min + 纸质习题+错题整理45min + 课后习题+错题整理10min",
+              "done": null
+            },
+            {
+              "text": "云计算的关键技术：纸质习题错题整理12min",
+              "done": null
+            }
+          ]
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 50,
+          "items": [
+            {
+              "text": "7.2 n阶行列式及行列式的性质：视频50min",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习英语45分钟、计算机基础97分钟、高数50分钟，合计192分钟。"
+    },
+    {
       "date": "2026-11-20",
       "subjects": {
         "english": {
