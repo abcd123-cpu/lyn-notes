@@ -4,6 +4,56 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-22",
+      "subjects": {
+        "english": {
+          "minutes": 105,
+          "items": [
+            {
+              "text": "听力技巧学习：30min",
+              "done": null
+            },
+            {
+              "text": "四级听力练习：25min",
+              "done": null
+            },
+            {
+              "text": "四级听力复盘：50min",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 140,
+          "items": [
+            {
+              "text": "大数据概述：视频30min + 纸质习题8min + 课后习题+错题整理9min",
+              "done": null
+            },
+            {
+              "text": "大数据的关键技术：视频90min + 课后习题+错题整理23min",
+              "done": null
+            }
+          ]
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 115,
+          "items": [
+            {
+              "text": "7.2 n阶行列式及行列式的性质：视频90min + 课后习题25min",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习高数115分钟、计算机理论140分钟、英语105分钟，合计360分钟。"
+    },
+    {
       "date": "2026-11-21",
       "subjects": {
         "english": {
@@ -170,6 +220,68 @@ window.STUDY_DATA = {
       "summary": "今日学习高数二阶常系数线性齐次微分方程6.3上下配套视频，以及计算机专业理论的移动互联网概述和物联网主要应用领域，含视频与错题整理。"
     }
   ],
-  "weeklyReview": null,
-  "weeklyReviews": []
+  "weeklyReview": {
+    "summary": "本周英语围绕四级听力与仔细阅读进行技巧学习和真题练习复盘，理论课学习大数据、云计算与移动互联网的概述、关键技术和应用，数学推进行列式与二阶常系数线性齐次微分方程。",
+    "suggestions": [
+      {
+        "type": "study",
+        "text": "下周可继续推进数学行列式与微分方程的后续内容，保持视频学习与课后习题、错题整理结合。"
+      },
+      {
+        "type": "review",
+        "text": "下周可安排时间回顾大数据、云计算、移动互联网的错题，巩固关键技术部分的笔记。"
+      },
+      {
+        "type": "study",
+        "text": "下周可延续英语四级听力与仔细阅读的真题练习和纠错，保持技巧学习与练习交替。"
+      }
+    ],
+    "id": "2026-11-16-2102f6c09c340bbb",
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "nextWeekStart": "2026-11-23",
+    "generatedAt": "2026-11-23T16:29:39.159195+08:00",
+    "recordedDays": 5,
+    "subjectMinutes": {
+      "english": 230,
+      "theory": 467,
+      "practice": 0,
+      "math": 190
+    },
+    "totalMinutes": 887,
+    "hasUnknownTime": true
+  },
+  "weeklyReviews": [
+    {
+      "summary": "本周英语围绕四级听力与仔细阅读进行技巧学习和真题练习复盘，理论课学习大数据、云计算与移动互联网的概述、关键技术和应用，数学推进行列式与二阶常系数线性齐次微分方程。",
+      "suggestions": [
+        {
+          "type": "study",
+          "text": "下周可继续推进数学行列式与微分方程的后续内容，保持视频学习与课后习题、错题整理结合。"
+        },
+        {
+          "type": "review",
+          "text": "下周可安排时间回顾大数据、云计算、移动互联网的错题，巩固关键技术部分的笔记。"
+        },
+        {
+          "type": "study",
+          "text": "下周可延续英语四级听力与仔细阅读的真题练习和纠错，保持技巧学习与练习交替。"
+        }
+      ],
+      "id": "2026-11-16-2102f6c09c340bbb",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "nextWeekStart": "2026-11-23",
+      "generatedAt": "2026-11-23T16:29:39.159195+08:00",
+      "recordedDays": 5,
+      "subjectMinutes": {
+        "english": 230,
+        "theory": 467,
+        "practice": 0,
+        "math": 190
+      },
+      "totalMinutes": 887,
+      "hasUnknownTime": true
+    }
+  ]
 };
