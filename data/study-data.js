@@ -4,6 +4,60 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-23",
+      "subjects": {
+        "english": {
+          "minutes": 55,
+          "items": [
+            {
+              "text": "四级听力练习：25min",
+              "done": null
+            },
+            {
+              "text": "四级听力复盘：30min",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 187,
+          "items": [
+            {
+              "text": "大数据概述：纸质习题的错题整理",
+              "done": null
+            },
+            {
+              "text": "大数据的关键技术：纸质习题+错题整理1h50min",
+              "done": null
+            },
+            {
+              "text": "大数据主要应用领域：视频25min + 课后习题+错题整理10min + 纸质习题+错题整理34min",
+              "done": null
+            }
+          ]
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 83,
+          "items": [
+            {
+              "text": "7.2 n阶行列式及行列式的性质：课后习题15min",
+              "done": null
+            },
+            {
+              "text": "7.3（上）余子式与代数余子式：视频40min + 课后习题28min",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习高数83分钟、计算机理论187分钟、英语55分钟，合计325分钟。"
+    },
+    {
       "date": "2026-11-22",
       "subjects": {
         "english": {
