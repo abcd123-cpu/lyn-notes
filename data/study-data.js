@@ -218,6 +218,68 @@ window.STUDY_DATA = {
       },
       "plans": [],
       "summary": "今日学习高数二阶常系数线性齐次微分方程6.3上下配套视频，以及计算机专业理论的移动互联网概述和物联网主要应用领域，含视频与错题整理。"
+    },
+    {
+      "date": "2025-11-14",
+      "subjects": {
+        "english": {
+          "minutes": 55,
+          "items": [
+            {
+              "text": "四级听力练习",
+              "done": null
+            },
+            {
+              "text": "四级听力复盘",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 138,
+          "items": [
+            {
+              "text": "人工智能概述：纸质习题+错题整理",
+              "done": null
+            },
+            {
+              "text": "人工智能概述：课后习题+错题整理",
+              "done": null
+            },
+            {
+              "text": "人工智能概述：视频",
+              "done": null
+            },
+            {
+              "text": "人工智能技术分类：视频",
+              "done": null
+            }
+          ]
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 119,
+          "items": [
+            {
+              "text": "7.4范德蒙德行列式以及行和相等行列式：视频",
+              "done": null
+            },
+            {
+              "text": "7.5（上）矩阵的定义：视频",
+              "done": null
+            },
+            {
+              "text": "7.3（上）余子式与代数余子式：课后习题",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习高数119分钟、计算机理论138分钟、英语55分钟，合计312分钟。"
     }
   ],
   "weeklyReview": {
